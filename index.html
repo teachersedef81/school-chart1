@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okul Bilgi Portalı - Veli Girişi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .notification-banner {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            animation: scrollText 20s linear infinite;
+        }
+        
+        @keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .class-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .active-lesson {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+        }
+        
+        .slide-in {
+            animation: slideIn 0.3s ease-out forwards;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="mb-8">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-blue-800">Okul Bilgi Portalı</h1>
+                    <p class="text-gray-600">Veli girişi - Anlık okul bilgileri</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-bell mr-2"></i>
+                        <span>Bildirimler</span>
+                    </button>
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification Banner -->
+        <div class="mb-8 overflow-hidden">
+            <div class="notification-banner text-white py-3 px-4 rounded-lg whitespace-nowrap">
+                <span class="font-bold mr-4"><i class="fas fa-exclamation-circle mr-2"></i>ÖNEMLİ DUYURU:</span>
+                <span class="text-sm md:text-base">23 Nisan Ulusal Egemenlik ve Çocuk Bayramı töreni 23 Nisan Pazartesi günü saat 10:00'da okul bahçesinde yapılacaktır.</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Class List -->
+            <div class="lg:col-span-1 bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-graduation-cap mr-2 text-blue-600"></i>
+                    Sınıflar
+                </h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="class-card bg-blue-50 border border-blue-200 rounded-lg p-4 text-center cursor-pointer transition-all duration-300" onclick="showClassInfo('5A')">
+                        <div class="text-4xl font-bold text-blue-800 mb-2">5A</div>
+                        <div class="text-sm text-gray-600">Sınıf Öğretmeni: Ayşe Yılmaz</div>
+                    </div>
+                    <div class="class-card bg-blue-50 border border-blue-200 rounded-lg p-4 text-center cursor-pointer transition-all duration-300" onclick="showClassInfo('6A')">
+                        <div class="text-4xl font-bold text-blue-800 mb-2">6A</div>
+                        <div class="text-sm text-gray-600">Sınıf Öğretmeni: Mehmet Kaya</div>
+                    </div>
+                    <div class="class-card bg-blue-50 border border-blue-200 rounded-lg p-4 text-center cursor-pointer transition-all duration-300" onclick="showClassInfo('7A')">
+                        <div class="text-4xl font-bold text-blue-800 mb-2">7A</div>
+                        <div class="text-sm text-gray-600">Sınıf Öğretmeni: Fatma Demir</div>
+                    </div>
+                    <div class="class-card bg-blue-50 border border-blue-200 rounded-lg p-4 text-center cursor-pointer transition-all duration-300" onclick="showClassInfo('8A')">
+                        <div class="text-4xl font-bold text-blue-800 mb-2">8A</div>
+                        <div class="text-sm text-gray-600">Sınıf Öğretmeni: Ali Şahin</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Class Information -->
+            <div class="lg:col-span-2">
+                <div id="classInfoContainer" class="bg-white rounded-xl shadow-md p-6">
+                    <div class="text-center py-12 text-gray-400">
+                        <i class="fas fa-school text-5xl mb-4"></i>
+                        <p class="text-xl">Lütfen bir sınıf seçiniz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Announcements -->
+        <div class="mt-8 bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-calendar-star mr-2 text-purple-600"></i>
+                Özel Gün ve Haftalar
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border border-purple-100 rounded-lg p-4 hover:bg-purple-50 transition-colors">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-purple-100 text-purple-800 p-2 rounded-lg mr-3">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="font-semibold">Orman Haftası</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">21-26 Mart</p>
+                    <a href="#" class="text-purple-600 text-sm font-medium flex items-center">
+                        Sunumu Görüntüle <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                    </a>
+                </div>
+                <div class="border border-green-100 rounded-lg p-4 hover:bg-green-50 transition-colors">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-green-100 text-green-800 p-2 rounded-lg mr-3">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3 class="font-semibold">23 Nisan</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">23 Nisan</p>
+                    <a href="#" class="text-green-600 text-sm font-medium flex items-center">
+                        Etkinlik Programı <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                    </a>
+                </div>
+                <div class="border border-yellow-100 rounded-lg p-4 hover:bg-yellow-50 transition-colors">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-yellow-100 text-yellow-800 p-2 rounded-lg mr-3">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="font-semibold">Kütüphaneler Haftası</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">28 Mart-3 Nisan</p>
+                    <a href="#" class="text-yellow-600 text-sm font-medium flex items-center">
+                        Kitap Listesi <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Class Info Template (Hidden) -->
+    <template id="classInfoTemplate">
+        <div class="slide-in">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-chalkboard-teacher mr-3 text-blue-600"></i>
+                    <span id="className">5A</span> Sınıf Bilgileri
+                </h2>
+                <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                    <i class="fas fa-clock mr-1"></i>
+                    <span id="lastUpdated">Son güncelleme: 10:15</span>
+                </div>
+            </div>
+
+            <!-- Current Lesson -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-700 mb-3 flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                    Şu Anda
+                </h3>
+                <div id="currentLesson" class="active-lesson bg-blue-50 border-2 border-blue-200 rounded-xl p-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <div class="font-bold text-blue-800 text-lg" id="currentLessonName">Matematik</div>
+                            <div class="text-gray-600" id="currentLessonTime">10:00 - 10:40</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-medium" id="currentTeacher">Öğretmen: Ahmet Yıldız</div>
+                            <div class="text-sm text-gray-600" id="currentClassroom">Derslik: 205</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today's Schedule -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-700 mb-3 flex items-center">
+                    <i class="fas fa-calendar-day mr-2 text-blue-500"></i>
+                    Günlük Ders Programı
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-blue-600 text-white">
+                            <tr>
+                                <th class="py-2 px-4 text-left">Ders Saati</th>
+                                <th class="py-2 px-4 text-left">Ders</th>
+                                <th class="py-2 px-4 text-left">Öğretmen</th>
+                                <th class="py-2 px-4 text-left">Derslik</th>
+                                <th class="py-2 px-4 text-left">Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scheduleTable" class="divide-y divide-gray-200">
+                            <!-- Filled by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Substitute Teachers -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-700 mb-3 flex items-center">
+                    <i class="fas fa-user-clock mr-2 text-blue-500"></i>
+                    Devamsız Öğretmenler
+                </h3>
+                <div id="substituteTeachers" class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                    <div class="flex items-center text-yellow-800">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span>Bugün devamsız öğretmen bulunmamaktadır.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duty Teachers -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-700 mb-3 flex items-center">
+                    <i class="fas fa-user-shield mr-2 text-blue-500"></i>
+                    Nöbetçi Öğretmenler
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="dutyTeachers">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        // Sample data for classes
+        const classData = {
+            '5A': {
+                homeroomTeacher: 'Ayşe Yılmaz',
+                currentLesson: {
+                    name: 'Matematik',
+                    time: '10:00 - 10:40',
+                    teacher: 'Ahmet Yıldız',
+                    classroom: '205'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Türkçe', teacher: 'Ayşe Yılmaz', classroom: '105', status: 'normal' },
+                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'normal' },
+                    { time: '10:00 - 10:40', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '205', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '105', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'Beden Eğitimi', teacher: 'Can Demir', classroom: 'Spor Salonu', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Ayşe Yılmaz', area: 'Bahçe ve Kantin' },
+                    { name: 'Can Demir', area: 'Spor Salonu ve Koridorlar' }
+                ]
+            },
+            '6A': {
+                homeroomTeacher: 'Mehmet Kaya',
+                currentLesson: {
+                    name: 'Fen Bilimleri',
+                    time: '09:20 - 10:00',
+                    teacher: 'Zeynep Korkmaz',
+                    classroom: 'Lab-2'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '206', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-2', status: 'current' },
+                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Mehmet Kaya', classroom: '106', status: 'upcoming' },
+                    { time: '10:50 - 11:30', subject: 'Sosyal Bilgiler', teacher: 'Fatma Demir', classroom: '106', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'Görsel Sanatlar', teacher: 'Selin Aydın', classroom: 'Sanat Atölyesi', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Teknoloji Tasarım', teacher: 'Murat Yılmaz', classroom: 'Teknoloji Sınıfı', status: 'upcoming' }
+                ],
+                substitutes: [
+                    { subject: 'Beden Eğitimi', originalTeacher: 'Can Demir', substituteTeacher: 'Ali Şahin', reason: 'Hastalık' }
+                ],
+                dutyTeachers: [
+                    { name: 'Mehmet Kaya', area: 'Bahçe ve Kantin' },
+                    { name: 'Murat Yılmaz', area: 'Koridorlar ve Laboratuvarlar' }
+                ]
+            },
+            '7A': {
+                homeroomTeacher: 'Fatma Demir',
+                currentLesson: {
+                    name: 'İngilizce',
+                    time: '11:40 - 12:20',
+                    teacher: 'David Smith',
+                    classroom: '203'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '207', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Fatma Demir', classroom: '107', status: 'completed' },
+                    { time: '10:50 - 11:30', subject: 'Sosyal Bilgiler', teacher: 'Ali Şahin', classroom: '107', status: 'completed' },
+                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'current' },
+                    { time: '13:00 - 13:40', subject: 'Beden Eğitimi', teacher: 'Can Demir', classroom: 'Spor Salonu', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Din Kültürü', teacher: 'Hasan Yücel', classroom: '107', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Fatma Demir', area: 'Bahçe ve Kantin' },
+                    { name: 'Zeynep Korkmaz', area: 'Laboratuvarlar ve Koridorlar' }
+                ]
+            },
+            '8A': {
+                homeroomTeacher: 'Ali Şahin',
+                currentLesson: {
+                    name: 'Sosyal Bilgiler',
+                    time: '10:50 - 11:30',
+                    teacher: 'Ali Şahin',
+                    classroom: '108'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '208', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-2', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Elif Güneş', classroom: '108', status: 'completed' },
+                    { time: '10:50 - 11:30', subject: 'Sosyal Bilgiler', teacher: 'Ali Şahin', classroom: '108', status: 'current' },
+                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'Beden Eğitimi', teacher: 'Can Demir', classroom: 'Spor Salonu', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Teknoloji Tasarım', teacher: 'Murat Yılmaz', classroom: 'Teknoloji Sınıfı', status: 'upcoming' }
+                ],
+                substitutes: [
+                    { subject: 'Beden Eğitimi', originalTeacher: 'Can Demir', substituteTeacher: 'Mehmet Kaya', reason: 'Seminer' }
+                ],
+                dutyTeachers: [
+                    { name: 'Ali Şahin', area: 'Bahçe ve Kantin' },
+                    { name: 'Ahmet Yıldız', area: 'Koridorlar ve Sınıflar' }
+                ]
+            }
+        };
+
+        // Function to show class information
+        function showClassInfo(className) {
+            const classInfo = classData[className];
+            const container = document.getElementById('classInfoContainer');
+            const template = document.getElementById('classInfoTemplate');
+            
+            // Clone the template content
+            const content = template.content.cloneNode(true);
+            
+            // Update class name
+            content.getElementById('className').textContent = className;
+            
+            // Update last updated time
+            const now = new Date();
+            content.getElementById('lastUpdated').textContent = `Son güncelleme: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
+            
+            // Update current lesson
+            const currentLesson = content.getElementById('currentLesson');
+            content.getElementById('currentLessonName').textContent = classInfo.currentLesson.name;
+            content.getElementById('currentLessonTime').textContent = classInfo.currentLesson.time;
+            content.getElementById('currentTeacher').textContent = `Öğretmen: ${classInfo.currentLesson.teacher}`;
+            content.getElementById('currentClassroom').textContent = `Derslik: ${classInfo.currentLesson.classroom}`;
+            
+            // Update schedule table
+            const scheduleTable = content.getElementById('scheduleTable');
+            scheduleTable.innerHTML = '';
+            
+            classInfo.schedule.forEach(lesson => {
+                const row = document.createElement('tr');
+                row.className = lesson.status === 'current' ? 'bg-blue-50' : '';
+                
+                const timeCell = document.createElement('td');
+                timeCell.className = 'py-2 px-4';
+                timeCell.textContent = lesson.time;
+                
+                const subjectCell = document.createElement('td');
+                subjectCell.className = 'py-2 px-4 font-medium';
+                subjectCell.textContent = lesson.subject;
+                
+                const teacherCell = document.createElement('td');
+                teacherCell.className = 'py-2 px-4';
+                teacherCell.textContent = lesson.teacher;
+                
+                const classroomCell = document.createElement('td');
+                classroomCell.className = 'py-2 px-4';
+                classroomCell.textContent = lesson.classroom;
+                
+                const statusCell = document.createElement('td');
+                statusCell.className = 'py-2 px-4';
+                
+                if (lesson.status === 'completed') {
+                    statusCell.innerHTML = '<span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Tamamlandı</span>';
+                } else if (lesson.status === 'current') {
+                    statusCell.innerHTML = '<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Devam Ediyor</span>';
+                } else if (lesson.status === 'upcoming') {
+                    statusCell.innerHTML = '<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Yaklaşıyor</span>';
+                } else {
+                    statusCell.innerHTML = '<span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs">Normal</span>';
+                }
+                
+                row.appendChild(timeCell);
+                row.appendChild(subjectCell);
+                row.appendChild(teacherCell);
+                row.appendChild(classroomCell);
+                row.appendChild(statusCell);
+                
+                scheduleTable.appendChild(row);
+            });
+            
+            // Update substitute teachers
+            const substituteTeachers = content.getElementById('substituteTeachers');
+            if (classInfo.substitutes.length > 0) {
+                substituteTeachers.innerHTML = '';
+                
+                classInfo.substitutes.forEach(sub => {
+                    const div = document.createElement('div');
+                    div.className = 'mb-3 last:mb-0 p-3 bg-yellow-100 rounded-lg';
+                    div.innerHTML = `
+                        <div class="font-medium text-yellow-900">${sub.subject} dersinde değişiklik:</div>
+                        <div class="text-sm">Normal öğretmen: ${sub.originalTeacher}</div>
+                        <div class="text-sm">Yerine giren: ${sub.substituteTeacher}</div>
+                        <div class="text-sm text-yellow-700">Sebep: ${sub.reason}</div>
+                    `;
+                    substituteTeachers.appendChild(div);
+                });
+            } else {
+                substituteTeachers.innerHTML = `
+                    <div class="flex items-center text-yellow-800">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span>Bugün devamsız öğretmen bulunmamaktadır.</span>
+                    </div>
+                `;
+            }
+            
+            // Update duty teachers
+            const dutyTeachers = content.getElementById('dutyTeachers');
+            dutyTeachers.innerHTML = '';
+            
+            classInfo.dutyTeachers.forEach(teacher => {
+                const div = document.createElement('div');
+                div.className = 'bg-gray-50 border border-gray-200 rounded-lg p-4';
+                div.innerHTML = `
+                    <div class="font-medium text-gray-800">${teacher.name}</div>
+                    <div class="text-sm text-gray-600 mt-1">Nöbet Bölgesi: ${teacher.area}</div>
+                `;
+                dutyTeachers.appendChild(div);
+            });
+            
+            // Clear container and add new content
+            container.innerHTML = '';
+            container.appendChild(content);
+        }
+
+        // Simulate API updates
+        function simulateUpdates() {
+            // In a real app, this would be replaced with actual API calls
+            setTimeout(() => {
+                const now = new Date();
+                const hours = now.getHours();
+                const minutes = now.getMinutes();
+                
+                // Update current lesson based on time
+                for (const className in classData) {
+                    const classInfo = classData[className];
+                    let currentLessonFound = false;
+                    
+                    classInfo.schedule.forEach(lesson => {
+                        const [startTime, endTime] = lesson.time.split(' - ');
+                        const [startHour, startMinute] = startTime.split(':').map(Number);
+                        const [endHour, endMinute] = endTime.split(':').map(Number);
+                        
+                        const currentTime = hours * 60 + minutes;
+                        const lessonStart = startHour * 60 + startMinute;
+                        const lessonEnd = endHour * 60 + endMinute;
+                        
+                        if (currentTime >= lessonStart && currentTime <= lessonEnd) {
+                            // This is the current lesson
+                            lesson.status = 'current';
+                            classInfo.currentLesson = {
+                                name: lesson.subject,
+                                time: lesson.time,
+                                teacher: lesson.teacher,
+                                classroom: lesson.classroom
+                            };
+                            currentLessonFound = true;
+                        } else if (currentTime < lessonStart) {
+                            // Upcoming lesson
+                            lesson.status = 'upcoming';
+                        } else {
+                            // Completed lesson
+                            lesson.status = 'completed';
+                        }
+                    });
+                    
+                    if (!currentLessonFound) {
+                        // Between lessons or school is closed
+                        classInfo.currentLesson = {
+                            name: 'Ders Yok',
+                            time: '--:-- - --:--',
+                            teacher: '--',
+                            classroom: '--'
+                        };
+                    }
+                }
+                
+                // If a class info is currently displayed, refresh it
+                const currentClass = document.getElementById('className');
+                if (currentClass) {
+                    showClassInfo(currentClass.textContent);
+                }
+                
+                // Schedule next update
+                simulateUpdates();
+            }, 60000); // Update every minute
+        }
+
+        // Start simulation
+        simulateUpdates();
+    </script>
+</body>
+</html>
