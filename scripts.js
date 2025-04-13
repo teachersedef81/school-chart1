@@ -48,7 +48,7 @@
                 ]
             },
             '5C': {
-                homeroomTeacher: 'Selin Tekin',
+                homeroomTeacher: 'Güldeniz YILMAZ',
                 currentLesson: {
                     name: 'Görsel Sanatlar',
                     time: '10:00 - 10:40',
@@ -71,7 +71,7 @@
                 ]
             },
             '6A': {
-                homeroomTeacher: 'Murat Şen',
+                homeroomTeacher: 'Ümit ATAR',
                 currentLesson: {
                     name: 'Bilişim Teknolojileri',
                     time: '10:00 - 10:40',
@@ -94,7 +94,7 @@
                 ]
             },
             '6B': {
-                homeroomTeacher: 'Ali Öztürk',
+                homeroomTeacher: 'Gökçe Mine UZDUR',
                 currentLesson: {
                     name: 'Türkçe',
                     time: '10:00 - 10:40',
@@ -119,7 +119,7 @@
                 ]
             },
             '7A': {
-                homeroomTeacher: 'Fatma Yılmaz',
+                homeroomTeacher: 'Recep AYDIN',
                 currentLesson: {
                     name: 'Matematik',
                     time: '10:00 - 10:40',
@@ -143,8 +143,33 @@
                     { name: 'Osman Kara', area: 'Fen Laboratuvarları' }
                 ]
             },
+            '7B': {
+                homeroomTeacher: 'Kemal KÜÇÜKAKBULUT',
+                currentLesson: {
+                    name: 'Sosyal Bilgiler',
+                    time: '10:00 - 10:40',
+                    teacher: 'Harika ÇAKICI',
+                    classroom: '305'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Türkçe', teacher: 'Ali Öztürk', classroom: '305', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Sosyal Bilgiler', teacher: 'Buse Akar', classroom: '305', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Matematik', teacher: 'Fatma Yılmaz', classroom: '305', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Fen Bilimleri', teacher: 'Osman Kara', classroom: 'Lab-2', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'Sarah Johnson', classroom: '203', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'Din Kültürü', teacher: 'Ahmet Yücel', classroom: '305', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [
+                    { originalTeacher: 'Osman Kara', substituteTeacher: 'Zeynep Korkmaz', reason: 'İzin' }
+                ],
+                dutyTeachers: [
+                    { name: 'Buse Akar', area: 'Giriş ve Bahçe' },
+                    { name: 'Osman Kara', area: 'Fen Laboratuvarları' }
+                ]
+            },
             '8A': {
-                homeroomTeacher: 'Buse Akar',
+                homeroomTeacher: 'Saliha LİKOS',
                 currentLesson: {
                     name: 'Sosyal Bilgiler',
                     time: '10:00 - 10:40',
