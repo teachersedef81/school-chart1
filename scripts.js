@@ -1,45 +1,45 @@
  // Sample data for classes (extended)
         const classData = {
             '5A': {
-                homeroomTeacher: 'Ayşe Yılmaz',
+                homeroomTeacher: 'Mustafa TOPCAN',
                 currentLesson: {
                     name: 'Matematik',
                     time: '10:00 - 10:40',
-                    teacher: 'Ahmet Yıldız',
-                    classroom: '205'
+                    teacher: 'Eşref AKKAŞ',
+                    classroom: '5A'
                 },
                 schedule: [
-                    { time: '08:30 - 09:10', subject: 'Türkçe', teacher: 'Ayşe Yılmaz', classroom: '105', status: 'normal' },
-                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'normal' },
-                    { time: '10:00 - 10:40', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '205', status: 'current' },
-                    { time: '10:50 - 11:30', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '105', status: 'upcoming' },
-                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
-                    { time: '13:00 - 13:40', subject: 'Beden Eğitimi', teacher: 'Can Demir', classroom: 'Spor Salonu', status: 'upcoming' },
-                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                    { time: '08:30 - 09:10', subject: 'Türkçe', teacher: 'Tuba Ovalı İNAN', classroom: '105', status: 'normal' },
+                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Celil ÖZTÜRK', classroom: 'Lab-1', status: 'normal' },
+                    { time: '10:00 - 10:40', subject: 'Matematik', teacher: 'Eşref AKKAŞ', classroom: '205', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Sosyal Bilgiler', teacher: 'Elif Uzun ÖZEN', classroom: '105', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'İngilizce', teacher: 'Sümeyye KARADUMAN', classroom: '203', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'Beden Eğitimi', teacher: 'Bünyamin KAAHRAMAN', classroom: 'Spor Salonu', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Ceren ÇİFTÇİ', classroom: 'Müzik Odası', status: 'upcoming' }
                 ],
                 substitutes: [],
                 dutyTeachers: [
-                    { name: 'Ayşe Yılmaz', area: 'Bahçe ve Kantin' },
+                    { name: 'Tuba Ovalı İNAN', area: 'Bahçe ve Kantin' },
                     { name: 'Can Demir', area: 'Spor Salonu ve Koridorlar' }
                 ]
             },
             '5B': {
-                homeroomTeacher: 'Hasan Aydın',
+                homeroomTeacher: 'Cem ÖNCÜ',
                 currentLesson: {
                     name: 'Türkçe',
                     time: '10:00 - 10:40',
-                    teacher: 'Hasan Aydın',
+                    teacher: 'Vedat YÜKSEL',
                     classroom: '106'
                 },
                 schedule: [
-                    { time: '08:30 - 09:10', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '106', status: 'completed' },
-                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'completed' },
-                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Hasan Uysal', classroom: '105', status: 'completed'},
-                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '106', status: 'current' },
-                    { time: '10:50 - 11:30', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
-                    { time: '11:40 - 12:20', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '106', status: 'upcoming' },
-                    { time: '13:00 - 13:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'upcoming' },
-                    { time: '13:50 - 14:30', subject: 'Bilişim Teknolojileri', teacher: 'Murat Şen', classroom: 'Bilgisayar Lab', status: 'upcoming' }
+                    { time: '08:30 - 09:10', subject: 'Matematik', teacher: 'Ümit ATAR', classroom: '106', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Fen Bilimleri', teacher: 'Cem ÖNCÜ', classroom: 'Lab-1', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Vedat YÜKSEL', classroom: '105', status: 'completed'},
+                    { time: '10:00 - 10:40', subject: 'Türkçe', teacher: 'Vedat YÜKSEL', classroom: '106', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'İngilizce', teacher: 'Elif FERGANE', classroom: '203', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Sosyal Bilgiler', teacher: 'Elif Uzun ÖZEN', classroom: '106', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'Görsel Sanatlar', teacher: 'Elçin KAHRAMAN', classroom: 'Sanat Odası', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Bilişim Teknolojileri', teacher: 'Muhammet ÖZCAN', classroom: 'Bilgisayar Lab', status: 'upcoming' }
                 ],
                 substitutes: [],
                 dutyTeachers: [
