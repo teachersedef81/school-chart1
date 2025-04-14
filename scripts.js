@@ -70,6 +70,75 @@
                     { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
                 ]
             },
+            '5D': {
+                homeroomTeacher: 'Barkın KILINÇOĞLU',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Elçin KAHRAMAN',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '5E': {
+                homeroomTeacher: 'Vedat YÜKSEL',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '5F': {
+                homeroomTeacher: 'Elif FERGANE',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
             '6A': {
                 homeroomTeacher: 'Ümit ATAR',
                 currentLesson: {
@@ -116,6 +185,144 @@
                 dutyTeachers: [
                     { name: 'Ali Öztürk', area: 'Alt Kat Koridorları' },
                     { name: 'Sarah Johnson', area: 'Yabancı Dil Sınıfları' }
+                ]
+            },
+            '6C': {
+                homeroomTeacher: 'Nurdan KÜÇÜKAKBULUT',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '6D': {
+                homeroomTeacher: 'Halil DURDU',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '6E': {
+                homeroomTeacher: 'Semahat YILMAZ',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '6F': {
+                homeroomTeacher: 'Sümeyye BİLGİN',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '6G': {
+                homeroomTeacher: 'Hatice TEKİN',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '6H': {
+                homeroomTeacher: 'N. Güler TAŞKIRAN',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
                 ]
             },
             '7A': {
@@ -168,6 +375,144 @@
                     { name: 'Osman Kara', area: 'Fen Laboratuvarları' }
                 ]
             },
+            '7C': {
+                homeroomTeacher: 'Figen E. KARAGÜZEL',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '7D': {
+                homeroomTeacher: 'Cem İ. BAĞRIAÇIK',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '7E': {
+                homeroomTeacher: 'S. Demet ÖZDOĞAN',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '7F': {
+                homeroomTeacher: 'Yasemin ERGEÇ',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '7G': {
+                homeroomTeacher: 'Cihan YÜKSEL',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '7H': {
+                homeroomTeacher: 'Zuhal HALICI',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
             '8A': {
                 homeroomTeacher: 'Saliha LİKOS',
                 currentLesson: {
@@ -189,6 +534,167 @@
                 dutyTeachers: [
                     { name: 'Kemal Demir', area: 'Üst Kat Koridorları' },
                     { name: 'Sevgi Yaman', area: 'Kütüphane ve Okuma Alanları' }
+                ]
+            },
+            '8B': {
+                homeroomTeacher: 'Özlem ATEŞ',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '8C': {
+                homeroomTeacher: 'Seher YILMAZ',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '8D': {
+                homeroomTeacher: 'Eşref AKKAŞ',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '8E': {
+                homeroomTeacher: 'Merve A. TANK',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '8F': {
+                homeroomTeacher: 'Nesrin Eda TOZCU',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '8G': {
+                homeroomTeacher: 'Semra ÖZTÜRK',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
+                ]
+            },
+            '8H': {
+                homeroomTeacher: 'Celil ÖZTÜRK',
+                currentLesson: {
+                    name: 'Görsel Sanatlar',
+                    time: '10:00 - 10:40',
+                    teacher: 'Selin Tekin',
+                    classroom: 'Sanat Odası'
+                },
+                schedule: [
+                    { time: '08:30 - 09:10', subject: 'Sosyal Bilgiler', teacher: 'Mehmet Kaya', classroom: '107', status: 'completed' },
+                    { time: '09:20 - 10:00', subject: 'Türkçe', teacher: 'Hasan Aydın', classroom: '107', status: 'completed' },
+                    { time: '10:00 - 10:40', subject: 'Görsel Sanatlar', teacher: 'Selin Tekin', classroom: 'Sanat Odası', status: 'current' },
+                    { time: '10:50 - 11:30', subject: 'Matematik', teacher: 'Ahmet Yıldız', classroom: '107', status: 'upcoming' },
+                    { time: '11:40 - 12:20', subject: 'Fen Bilimleri', teacher: 'Zeynep Korkmaz', classroom: 'Lab-1', status: 'upcoming' },
+                    { time: '13:00 - 13:40', subject: 'İngilizce', teacher: 'David Smith', classroom: '203', status: 'upcoming' },
+                    { time: '13:50 - 14:30', subject: 'Müzik', teacher: 'Elif Güneş', classroom: 'Müzik Odası', status: 'upcoming' }
+                ],
+                substitutes: [],
+                dutyTeachers: [
+                    { name: 'Hasan Aydın', area: 'Bahçe ve Kantin' },
+                    { name: 'Selin Tekin', area: 'Müzik ve Sanat Koridoru' }
                 ]
             }
         };
